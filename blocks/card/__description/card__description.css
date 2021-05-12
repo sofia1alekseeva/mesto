@@ -1,0 +1,6 @@
+.card__description {
+  margin: 0;
+  background-color: white;
+  max-height: 100%;
+  display: flex;
+}
