@@ -1,0 +1,9 @@
+.card__description_like {
+  width: 22px;
+  height: 19px;
+  margin-right: 30px;
+  background-image: url(../../../../images/like_button.svg);
+  background-repeat: no-repeat;
+  border: none;
+  background-color: transparent;
+}

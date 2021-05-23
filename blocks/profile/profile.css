@@ -3,4 +3,15 @@
   color: #FFFFFF;
   margin: 45px auto 51px;
   max-width: 880px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+.profile {
+    margin: 0 auto 36px auto;
+    flex-direction: column;
+    max-width: 282px;
+    justify-content: center;
+}
 }

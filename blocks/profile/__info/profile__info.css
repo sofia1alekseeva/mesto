@@ -1,5 +1,16 @@
 .profile__info{
-position: relative;
+  max-width: 336px;
+  margin: auto auto auto 0;
+  display: grid;
+  grid-template-columns: auto auto;
+  align-items: center;
+  gap: 16px 18px;
+}
 
-width: 336px;
+@media screen and (max-width: 768px) {
+  .profile__info{
+    gap: 14px 16px;
+    margin: 0 auto;
+    grid-template-columns: max-content max-content;
+  }
 }
