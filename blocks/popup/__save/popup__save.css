@@ -2,11 +2,21 @@
   color: white;
   background-color: black;
   height: 50px;
-width: 358px;
-border-radius: 2px;
-margin: 48px 36px 0;
+  width: 358px;
+  border-radius: 2px;
+  margin: 48px 36px 0;
+  cursor: pointer;
+  outline: none;
 }
 
 .popup__save:hover {
-  opacity: 80%;
+  opacity: 60%;
+}
+
+@media screen and (max-width: 768px) {
+  .popup__save {
+    width: 238px;
+    height: 46px;
+    margin: 45px 22px 0;
+  }
 }

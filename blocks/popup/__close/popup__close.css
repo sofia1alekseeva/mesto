@@ -8,6 +8,20 @@
   background-position: center;
   border: #000000;
   background-color: transparent;
-  background-image: url(../../../images/Close_Icon.svg);
+  background-image: url(../../../images/close_button.svg);
+  cursor: pointer;
+  outline: none;
+}
 
+.popup__close:hover {
+  opacity: 60%;
+}
+
+@media screen and (max-width: 768px) {
+  .popup__close {
+    width: 26px;
+    height: 26px;
+    top: -50px;
+    left: 250px;
+  }
 }

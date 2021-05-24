@@ -7,10 +7,12 @@
   border-radius: 2px;
   background-color: #000000;
   background-image: url('../../../images/profile__add-button.svg');
+  cursor: pointer;
+  outline: none;
 }
 
 .profile__add-button:hover {
-  opacity: 80%;
+  opacity: 60%;
 }
 
 @media (max-width: 768px) {

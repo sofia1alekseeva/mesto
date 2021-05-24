@@ -9,3 +9,10 @@
   margin: auto;
   align-items: stretch;
 }
+
+@media (max-width: 768px) {
+  .popup__container {
+    width: 282px;
+    height: 322px;
+  }
+}

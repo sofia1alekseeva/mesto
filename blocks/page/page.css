@@ -7,10 +7,9 @@ body {
   color: #fff;
   max-width: 880px;
   margin: 0 auto;
-
 }
 
-@media (max-width: 880px) {
+@media (max-width: 768px) {
   .page {
     margin: 0 19px;
   }

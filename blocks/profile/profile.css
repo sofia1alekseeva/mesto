@@ -8,10 +8,10 @@
 }
 
 @media (max-width: 768px) {
-.profile {
+  .profile {
     margin: 0 auto 36px auto;
     flex-direction: column;
     max-width: 282px;
     justify-content: center;
-}
+  }
 }

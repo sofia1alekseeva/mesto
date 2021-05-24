@@ -5,9 +5,16 @@
   padding-bottom: 13px;
   width: 358px;
   height: 14px;
+  outline: none;
 }
-
 
 .popup__input:nth-child(2) {
   margin-top: 30px;
+}
+
+@media screen and (max-width: 768px) {
+  .popup__input {
+    width: 236px;
+    margin: 0 21px;
+  }
 }
