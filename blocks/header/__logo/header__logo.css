@@ -9,3 +9,10 @@
     margin-left: 8px;
   }
 }
+
+@media (max-width: 768px) {
+  .header__logo {
+    width: 103px;
+    height: 24px;
+  }
+}

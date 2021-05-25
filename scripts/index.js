@@ -17,13 +17,6 @@ function toggleClass() {
   jobInput.value = jobName.textContent;
 }
 
-popup.addEventListener('click', function (event) {
-  if (event.target == event.currentTarget) {
-    toggleClass();
-  }
-});
-
-
 function formSubmitHandler(evt) {
   evt.preventDefault();
   profileName.textContent = nameInput.value;
