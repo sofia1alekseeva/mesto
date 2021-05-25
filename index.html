@@ -12,72 +12,73 @@
   <div class="page">
     <header class="header">
       <img src="./images/logo.svg" alt="Логотип Место" class="header__logo" />
-      <div class="header__line"></div>
     </header>
+    <div class="main">
     <section class="profile">
       <img src="./images/Jacques-Yves_Cousteau.png" alt="Жак-Ив Кусто" class="profile__avatar" />
       <div class="profile__info">
         <h1 class="profile__title">Жак-Ив Кусто</h1>
         <button type="button" class="profile__edit" aria-label="Редактировать профиль"></button>
-        <h2 class="profile__subtitle">Исследователь океана</h2>
-      </div>
-      <div class="popup">
-        <div class="popup__container">
-          <button type="button" class="popup__close" aria-label="Закрыть модальное окно"></button>
-          <h2 class="popup__title">Редактировать профиль</h2>
-          <form class="popup__form" action='#' name="profile-edit">
-            <input class="popup__input" type="text" value="">
-            <input class="popup__input" type="text" value="">
-            <button class="popup__save" type="submit" aria-label="Сохранить">Сохранить</button>
-          </form>
-        </div>
+        <p class="profile__subtitle">Исследователь океана</p>
       </div>
       <button type="button" class="profile__add-button" aria-label="Добавить карточку"></button>
     </section>
+    <div class="popup">
+      <div class="popup__container">
+        <button type="button" class="popup__close" aria-label="Закрыть модальное окно"></button>
+        <h2 class="popup__title">Редактировать профиль</h2>
+        <form class="popup__form" action='#' name="profile-edit">
+          <input class="popup__input" type="text" value="" name="name">
+          <input class="popup__input" type="text" value="" name="job">
+          <button class="popup__save" type="submit" aria-label="Сохранить">Сохранить</button>
+        </form>
+      </div>
+    </div>
     <section class="cards">
-      <div class="card">
+      <article class="card">
         <img src="./images/kirill-pershin-1088404-unsplash.png" alt="Фигура сердца на горе" class="card__image">
         <div class="card__description">
           <h3 class="card__title">Карачаевск</h3>
           <button type="button" class="card__like" aria-label="Нравится"></button>
         </div>
-      </div>
-      <div class="card">
+      </article>
+      <article class="card">
         <img src="./images/kirill-pershin-1404681-unsplash.png" alt="Фигура сердца на горе" class="card__image">
         <div class="card__description">
           <h3 class="card__title">Гора Эльбрус</h3>
           <button type="button" class="card__like" aria-label="Нравится"></button>
         </div>
-      </div>
-      <div class="card">
+      </article>
+      <article class="card">
         <img src="./images/kirill-pershin-1556355-unsplash.png" alt="Фигура сердца на горе" class="card__image">
         <div class="card__description">
           <h3 class="card__title">Домбай</h3>
           <button type="button" class="card__like" aria-label="Нравится"></button>
         </div>
-      </div>
-      <div class="card">
+      </article>
+      <article class="card">
         <img src="./images/kirill-pershin-1404681-unsplash.png" alt="Фигура сердца на горе" class="card__image">
         <div class="card__description">
           <h3 class="card__title">Гора Эльбрус</h3>
           <button type="button" class="card__like" aria-label="Нравится"></button>
         </div>
-      </div>
-      <div class="card">
+      </article>
+      <article class="card">
         <img src="./images/kirill-pershin-1556355-unsplash.png" alt="Фигура сердца на горе" class="card__image">
         <div class="card__description">
           <h3 class="card__title">Домбай</h3>
           <button type="button" class="card__like" aria-label="Нравится"></button>
         </div>
-      </div>
-      <div class="card">
+      </article>
+      <article class="card">
         <img src="./images/kirill-pershin-1088404-unsplash.png" alt="Фигура сердца на горе" class="card__image">
         <div class="card__description">
           <h3 class="card__title">Карачаево-Черкессия</h3>
           <button type="button" class="card__like" aria-label="Нравится"></button>
         </div>
-      </div>
+      </article>
     </section>
+  </div>
     <footer class="footer">
       <p class="footer__copyright">© 2021 Mesto Russia</p>
     </footer>

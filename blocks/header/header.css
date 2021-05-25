@@ -1,3 +1,23 @@
 .header {
   margin: 45px auto 40px;
+  position: relative;
+}
+
+.header:after {
+  content: "";
+  height: 0px;
+  border: 1px solid #545454;
+  opacity: 0.7;
+  max-width: 150%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+@media screen and (max-width: 880px) {
+  .header:after {
+    left: -19px;
+    right: -19px;
+  }
 }

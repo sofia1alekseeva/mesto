@@ -9,14 +9,14 @@ body {
   margin: 0 auto;
 }
 
-@media (max-width: 1200px) {
+@media screen and (max-width: 1200px) {
   .page {
-  padding-left: 19px;
-  padding-right: 19px;
+    padding-left: 19px;
+    padding-right: 19px;
   }
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .page {
     margin: 0 19px;
     padding: 0;

@@ -12,7 +12,8 @@
 }
 
 .card__like:hover {
-  opacity: 60%;
+  opacity: 50%;
+  transition: opacity .3s linear .1s;
 }
 
 .card__like_active {
