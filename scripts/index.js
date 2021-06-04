@@ -49,6 +49,7 @@ const addCard = (placeTitle, imageSrc) => {
   const cardTitle = cardElement.querySelector('.card__title');
   cardTitle.textContent = placeTitle;
   cardImage.setAttribute('src', imageSrc);
+  cardImage.setAttribute('alt', placeTitle);
   cardElement.querySelector('.card__like').addEventListener('click', (evt) => {
     evt.target.classList.toggle('card__like_active');
   })
@@ -111,6 +112,7 @@ initialCards.forEach((element) => {
   const cardTitle = cardElement.querySelector('.card__title');
   cardTitle.textContent = element.name;
   cardImage.setAttribute('src', element.link);
+  cardImage.setAttribute('alt', element.name);
   cardLike.addEventListener('click', (evt) => {
     evt.target.classList.toggle('card__like_active');
   })
