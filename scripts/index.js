@@ -13,8 +13,8 @@ const profileName = document.querySelector('.profile__title');
 const jobName = document.querySelector('.profile__subtitle');
 const popupImage = document.querySelector('.popup_image');
 const popupImageClose = popupImage.querySelector('.popup__close');
-const popupOpenedImage = document.querySelector('.popup_image-opened');
-const popupImageText = document.querySelector('.popup_image-text');
+const popupOpenedImage = document.querySelector('.popup__image-opened');
+const popupImageText = document.querySelector('.popup__image-text');
 const cardTemplate = document.querySelector('#card-template').content;
 
 

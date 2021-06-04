@@ -13,8 +13,8 @@
 @import url(../blocks/popup/_edit-profile/popup_edit-profile.css);
 @import url(../blocks/popup/_image/popup_image.css);
 @import url(../blocks/popup/__image-container/popup__image-container.css);
-@import url(../blocks/popup/_image-opened/popup_image-opened.css);
-@import url(../blocks/popup/_image-text/popup_image-text.css);
+@import url(../blocks/popup/__image-opened/popup__image-opened.css);
+@import url(../blocks/popup/__image-text/popup__image-text.css);
 @import url(../blocks/popup/__container/popup__container.css);
 @import url(../blocks/popup/__title/popup__title.css);
 @import url(../blocks/popup/__input/popup__input.css);
