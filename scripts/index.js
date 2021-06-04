@@ -2,7 +2,6 @@ const profileEdit = document.querySelector('.profile__edit');
 const profileAdd = document.querySelector('.profile__add-button')
 const popupEdit = document.querySelector('.popup_edit-profile');
 const popupAdd = document.querySelector('.popup_add-place')
-const popup = document.querySelector('.popup');
 const cardsContainer = document.querySelector('.cards');
 const popupAddClose = popupAdd.querySelector('.popup__close');
 const popupEditClose = popupEdit.querySelector('.popup__close');
