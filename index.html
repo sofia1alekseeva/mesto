@@ -28,8 +28,8 @@
         <button type="button" class="popup__close" aria-label="Закрыть модальное окно"></button>
         <h2 class="popup__title">Редактировать профиль</h2>
         <form class="popup__form" action='#' name="edit-profile_form">
-          <input class="popup__input" type="text" value="" name="name">
-          <input class="popup__input" type="text" value="" name="job">
+          <input class="popup__input" type="text" value="" name="name" placeholder="Имя">
+          <input class="popup__input" type="text" value="" name="job" placeholder="Профессия">
           <button class="popup__save" type="submit" aria-label="Сохранить">Сохранить</button>
         </form>
       </div>
@@ -62,13 +62,14 @@
 <template id="card-template">
   <article class="card">
     <img src="." alt="" class="card__image">
-    <button class="card__delete"></button>
+    <button type="button" class="card__delete"></button>
     <div class="card__description">
       <h3 class="card__title"></h3>
       <button type="button" class="card__like" aria-label="Нравится"></button>
     </div>
   </article>
 </template>
+<script src="./scripts/initial-cards.js"></script>
 <script src="./scripts/index.js"></script>
 </body>
 
