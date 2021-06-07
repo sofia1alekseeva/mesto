@@ -16,8 +16,8 @@ const popupImageClose = popupImage.querySelector('.popup__close');
 const popupOpenedImage = document.querySelector('.popup__image-opened');
 const popupImageText = document.querySelector('.popup__image-text');
 const cardTemplate = document.querySelector('#card-template').content;
-const placeTitle = popupAdd.querySelector('input.popup__input');
-const imageSrc = popupAdd.querySelector('input.popup__input:nth-child(2)');
+const placeTitle = popupAdd.querySelector('.popup__input[name=place-title]');
+const imageSrc = popupAdd.querySelector('.popup__input[name=image-src]');
 
 function openCardImage(cardImage, cardTitle) {
   cardImage.addEventListener('click', () => {
