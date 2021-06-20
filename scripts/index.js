@@ -20,15 +20,15 @@ const placeTitle = popupAdd.querySelector('.popup__input[name=place-title]');
 const imageSrc = popupAdd.querySelector('.popup__input[name=image-src]');
 
 
-function keyEscapeHandler(evt) {
-  const popup = document.querySelector('.popup_opened');
+function handleEscape(evt) {
   if (evt.key === 'Escape') {
+    const popup = document.querySelector('.popup_opened');
     closePopup(popup)
   }
 }
 
 function closePopupOverlay(popup) {
-  popup.addEventListener('click', function (event) {
+  popup.addEventListener('mousedown', function (event) {
     if (event.target === event.currentTarget) {
       closePopup(popup)
     }
@@ -80,17 +80,20 @@ function addCard(container, element) {
 }
 
 function addPlace(evt) {
+  const popupSave = popupAdd.querySelector('.popup__save');
   evt.preventDefault();
   addCard(cardsContainer, createCard(placeTitle.value, imageSrc.value));
   addPlaceForm.reset();
   closePopup(popupAdd);
+  popupSave.classList.add('popup__save_disabled');
+  popupSave.setAttribute('disabled', 'disabled');
 }
 
 initialCards.forEach((element) => cardsContainer.appendChild(createCard(element.name, element.link)));
 
 function openPopup(popup) {
   popup.classList.add('popup_opened');
-  document.addEventListener('keydown', keyEscapeHandler)
+  document.addEventListener('keydown', handleEscape)
 }
 
 function openPopupEdit() {
@@ -114,7 +117,7 @@ popupImageClose.addEventListener('click', () => closePopup(popupImage), false);
 
 function closePopup(popup) {
   popup.classList.remove('popup_opened');
-  document.removeEventListener('keydown', keyEscapeHandler)
+  document.removeEventListener('keydown', handleEscape)
 }
 
 const updateProfileData = (evt) => {
