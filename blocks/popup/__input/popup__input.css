@@ -14,10 +14,10 @@
   text-align: left;
 }
 
-
 @media screen and (max-width: 768px) {
   .popup__input {
     width: 236px;
     margin: 0 21px;
   }
 }
+
