@@ -6,3 +6,9 @@
   min-height: 30px;
   font-size: 12px;
 }
+
+@media screen and (max-width: 768px) {
+  .popup__span-error {
+    margin: 0 21px;
+  }
+}
