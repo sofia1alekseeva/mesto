@@ -1,3 +1,13 @@
+const arrayValidationConfig = {
+  formSelector: '.popup__form',
+  inputSelector: '.popup__input',
+  submitButtonSelector: '.popup__save',
+  inactiveButtonClass: 'popup__save_disabled',
+  inputErrorClass: 'popup__input_error',
+  spanErrorClass: 'popup__span-error',
+  spanErrorClassVisible: 'popup__span-error_visible'
+}
+
 function isValid(formElement, inputElement, config) {
   if (!inputElement.validity.valid) {
     showInputError(formElement, inputElement, inputElement.validationMessage, config)
@@ -57,12 +67,4 @@ function enableValidation(config) {
   })
 }
 
-enableValidation({
-  formSelector: '.popup__form',
-  inputSelector: '.popup__input',
-  submitButtonSelector: '.popup__save',
-  inactiveButtonClass: 'popup__save_disabled',
-  inputErrorClass: 'popup__input_error',
-  spanErrorClass: 'popup__span-error',
-  spanErrorClassVisible: 'popup__span-error_visible'
-});
+enableValidation(arrayValidationConfig);
