@@ -27,9 +27,11 @@
       <div class="popup__container">
         <button type="button" class="popup__close" aria-label="Закрыть модальное окно"></button>
         <h2 class="popup__title">Редактировать профиль</h2>
-        <form class="popup__form" action='#' name="edit-profile_form">
-          <input class="popup__input" type="text" value="" name="name" placeholder="Имя">
-          <input class="popup__input" type="text" value="" name="job" placeholder="Профессия">
+        <form class="popup__form" action='#' name="edit-profile_form" novalidate>
+          <input class="popup__input" id="input-name" type="text" value="" name="name" placeholder="Имя" minlength="2" maxlength="40" required>
+          <span class="popup__span-error" id="input-name-error" ></span>
+          <input class="popup__input" id="input-job" type="text" value="" name="job" placeholder="Профессия" minlength="2" maxlength="200" required>
+          <span class="popup__span-error" id="input-job-error" ></span>
           <button class="popup__save" type="submit" aria-label="Сохранить">Сохранить</button>
         </form>
       </div>
@@ -38,10 +40,12 @@
       <div class="popup__container">
         <button type="button" class="popup__close" aria-label="Закрыть модальное окно"></button>
         <h2 class="popup__title">Новое место</h2>
-        <form class="popup__form" action='#' name="add-place_form">
-          <input class="popup__input" type="text" value="" name="place-title" placeholder="Название" required>
-          <input class="popup__input" type="text" value="" name="image-src" placeholder="Ссылка на картинку" required>
-          <button class="popup__save" type="submit" aria-label="Создать">Создать</button>
+        <form class="popup__form" action='#' name="add-place_form" novalidate>
+          <input class="popup__input" id="input-place-title" type="text" value="" name="place-title" placeholder="Название" minlength="2" maxlength="30" required>
+          <span class="popup__span-error" id="input-place-title-error"></span>
+          <input class="popup__input" id="input-image-src" type="url" value="" name="image-src" placeholder="Ссылка на картинку" required>
+          <span class="popup__span-error" id="input-image-src-error"></span>
+          <button class="popup__save popup__save_disabled" type="submit" disabled aria-label="Создать">Создать</button>
         </form>
       </div>
     </div>
@@ -71,6 +75,7 @@
 </template>
 <script src="./scripts/initial-cards.js"></script>
 <script src="./scripts/index.js"></script>
+<script src="./scripts/validate.js"></script>
 </body>
 
 </html>

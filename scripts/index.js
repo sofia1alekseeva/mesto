@@ -19,6 +19,26 @@ const cardTemplate = document.querySelector('#card-template').content;
 const placeTitle = popupAdd.querySelector('.popup__input[name=place-title]');
 const imageSrc = popupAdd.querySelector('.popup__input[name=image-src]');
 
+
+function keyEscapeHandler(evt) {
+  const popup = document.querySelector('.popup_opened');
+  if (evt.key === 'Escape') {
+    closePopup(popup)
+  }
+}
+
+function closePopupOverlay(popup) {
+  popup.addEventListener('click', function (event) {
+    if (event.target === event.currentTarget) {
+      closePopup(popup)
+    }
+  })
+}
+
+closePopupOverlay(popupEdit);
+closePopupOverlay(popupAdd);
+closePopupOverlay(popupImage);
+
 function openCardImage(cardImage, cardTitle) {
   cardImage.addEventListener('click', () => {
     openPopup(popupImage);
@@ -70,6 +90,7 @@ initialCards.forEach((element) => cardsContainer.appendChild(createCard(element.
 
 function openPopup(popup) {
   popup.classList.add('popup_opened');
+  document.addEventListener('keydown', keyEscapeHandler)
 }
 
 function openPopupEdit() {
@@ -93,6 +114,7 @@ popupImageClose.addEventListener('click', () => closePopup(popupImage), false);
 
 function closePopup(popup) {
   popup.classList.remove('popup_opened');
+  document.removeEventListener('keydown', keyEscapeHandler)
 }
 
 const updateProfileData = (evt) => {
